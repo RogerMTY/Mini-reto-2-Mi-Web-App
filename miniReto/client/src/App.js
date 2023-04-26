@@ -14,6 +14,8 @@ function Home(){
         <div className="home">
             <h1> Pokemon </h1>
             <img src={require('./images/Profesor_Oak.png')} alt=""/>
+            <img src=""/>
+            <h1> Pokemon </h1>
             <p>{data}</p>
         </div>
     )
