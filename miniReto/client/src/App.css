@@ -4,7 +4,13 @@
   }
 
 .home{
-  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.textbox{
+  text-align: left;
+  margin: auto;
 }
 @font-face {
     font-family: Pokemon;

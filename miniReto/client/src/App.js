@@ -1,24 +1,15 @@
 import React from "react";
 import "./App.css";
+import "./Navbar.css";
+import Navbar from "./Navbar";
+import Oak from "./Oak";
 
-function Home(){
-    const [data, setData] = React.useState(null);
-
-    React.useEffect(() => {
-        fetch("/api/home")
-        .then((res) => res.json())
-        .then((data) => setData(data.message));
-    }, []);
-
+function App(){
     return(
-        <div className="home">
-            <h1> Pokemon </h1>
-            <img src={require('./images/Profesor_Oak.png')} alt=""/>
-            <img src=""/>
-            <h1> Pokemon </h1>
-            <p>{data}</p>
-        </div>
+        <>
+        <Navbar />
+        <Oak />
+        </>
     )
 }
-
-export default Home;
+export default App;
