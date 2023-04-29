@@ -7,6 +7,7 @@ export default function Navbar(){
             <ActiveComponent to="/Johto">Johto</ActiveComponent>
             <ActiveComponent to="/Hoenn">Hoenn</ActiveComponent>
         </ul>
+        <p>Created by Rogelio and Yahir</p>
     </nav>
 }
 

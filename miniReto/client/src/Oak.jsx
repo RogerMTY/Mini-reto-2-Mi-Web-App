@@ -1,4 +1,5 @@
 import React from "react";
+import Downheader from "./Downheader";
 export default function Oak(){
 
     const [data, setData] = React.useState(null);
@@ -11,11 +12,19 @@ export default function Oak(){
     return(
         <>
         <div className="home">
-            <h1> Pokemon </h1>
             <img src={require('./images/Profesor_Oak.png')} alt=""/>
-            <h1> Pokemon </h1>
             <p>{data}</p>
-        </div>        
+            <h1>Pokemon</h1>
+            <h1>Pokemon</h1>
+            <h1>Pokemon</h1>
+            <h1>Pokemon</h1>
+            <h1>Pokemon</h1>
+            <Downheader/>
+        </div>
+        <div className="newDiv">
+            <Downheader/> 
+        </div> 
+
         </>
     )
 }

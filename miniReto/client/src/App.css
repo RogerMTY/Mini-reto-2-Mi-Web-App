@@ -1,27 +1,5 @@
-@font-face {
-    font-family: Pokemon;
-    src: url(./fonts/Pokemon\ Solid.ttf);
-  }
-
-.home{
-  text-align: center;
-  margin: auto;
-}
-
-.textbox{
-  text-align: left;
-  margin: auto;
-}
-@font-face {
-    font-family: Pokemon;
-    src: url(./fonts/Pokemon\ Solid.ttf);
-  }
-
-.home{
-  align-items: center;
-}
-    
 .component{
-  margin: 2rem;
+  background-color: yellow;
+  height: 100%;
   text-align: center;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import "./Navbar.css";
+import "./Oak.css"
 import Navbar from "./Navbar";
 import Oak from "./Oak";
 import Johto from "./pages/Johto";

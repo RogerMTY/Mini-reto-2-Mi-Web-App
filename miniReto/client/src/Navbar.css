@@ -2,6 +2,11 @@ body {
     margin: 0;
 }
 
+p {
+    font-family: monospace;
+    font-size: 20px;
+}
+
 .navBar{
     background-color: red;
     color: black;
@@ -9,7 +14,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-left: 10px;
-    padding-right: 650px;
+    padding-right: 15px;
     gap: 10px
 }
 
@@ -21,8 +26,9 @@ body {
 }
 
 .navBar ul{
+    font-family: monospace;
     font-size: 25px;
-    padding: 0;
+    padding-left: 180px;
     margin: 0;
     list-style: none;
     display: flex;
@@ -43,6 +49,11 @@ body {
 }
 
 .title-page{
+    padding:7px;
     font-size: 30px;
     font-family: Pokemon;
+}
+
+.title-page:hover{
+    background-color: gray;
 }
