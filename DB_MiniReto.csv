@@ -1,0 +1,29 @@
+Nombre,Region,Numero en Pokedex,Tipo,Debilidad,Imagen
+Bulbasaur,Kanto,1,"Planta, Veneno","Fuego, Psiquico, Volador, Hielo",https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png
+Charmander,Kanto,4,Fuego,"Agua, Tierra, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png
+Squirtle,Kanto,7,Agua,"Planta, Electrico",https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png
+Pikachu,Kanto,25,Electrico,Tierra,https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png
+Chikorita,Johto,152,Planta,"Fuego, Volador, Hielo, Veneno, Bicho",https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png
+Cyndaquil,Johto,155,Fuego,"Agua, Tierra, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png
+Totodile,Johto,158,Agua,"Planta, Electrico",https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png
+Treecko,Hoenn,252,Planta,"Fuego, Volador, Hielo, Veneno, Bicho",https://assets.pokemon.com/assets/cms2/img/pokedex/full/252.png
+Torchic,Hoenn,255,Fuego,"Agua, Tierra, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/255.png
+Mudkip,Hoenn,258,Agua,"Planta, Electrico",https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png
+Turtwig,Sinnoh,387,Planta,"Fuego, Volador, Hielo, Veneno, Bicho",https://assets.pokemon.com/assets/cms2/img/pokedex/full/387.png
+Chimchar ,Sinnoh,390,Fuego,"Agua, Tierra, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/390.png
+Piplup,Sinnoh,393,Agua,"Planta, Electrico",https://assets.pokemon.com/assets/cms2/img/pokedex/full/393.png
+Snivy,Teselia,495,Planta,"Fuego, Volador, Hielo, Veneno, Bicho",https://assets.pokemon.com/assets/cms2/img/pokedex/full/495.png
+Tepig,Teselia,498,Fuego,"Agua, Tierra, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/498.png
+Oshawott,Teselia,501,Agua,"Planta, Electrico",https://assets.pokemon.com/assets/cms2/img/pokedex/full/501.png
+Chespin,Kalos,650,Planta,"Fuego, Volador, Hielo, Veneno, Bicho",https://assets.pokemon.com/assets/cms2/img/pokedex/full/650.png
+Fennekin,Kalos,653,Fuego,"Agua, Tierra, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/653.png
+Froakie,Kalos,656,Agua,"Planta, Electrico",https://assets.pokemon.com/assets/cms2/img/pokedex/full/656.png
+Rowlet,Alola,722,"Planta, Volador","Fuego, Volador, Hielo *, Veneno, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/722.png
+Litten,Alola,725,Fuego,"Agua, Tierra, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/725.png
+Popplio,Alola,728,Agua,"Planta, Electrico",https://assets.pokemon.com/assets/cms2/img/pokedex/full/728.png
+Grookey,Galar,810,Planta,"Fuego, Volador, Hielo, Veneno, Bicho",https://assets.pokemon.com/assets/cms2/img/pokedex/full/810.png
+Scorbunny,Galar,813,Fuego,"Agua, Tierra, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/813.png
+Sobble,Galar,816,Agua,"Planta, Electrico",https://assets.pokemon.com/assets/cms2/img/pokedex/full/816.png
+Sprigatito,Paldea,906,Planta,"Fuego, Volador, Hielo, Veneno, Bicho",https://assets.pokemon.com/assets/cms2/img/pokedex/full/906.png
+Fuecoco,Paldea,909,Fuego,"Agua, Tierra, Roca",https://assets.pokemon.com/assets/cms2/img/pokedex/full/909.png
+Quaxly,Paldea,912,Agua,"Planta, Electrico",https://assets.pokemon.com/assets/cms2/img/pokedex/full/912.png
