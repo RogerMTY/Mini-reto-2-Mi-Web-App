@@ -1,3 +1,13 @@
+import "./Kanto.css"
+
 export default function Hoenn(){
-    return <h1>Kanto</h1>
+    return(
+        <>
+        <div className="pkmnnames">
+            <h1>Bulbasaur</h1>
+            <h1>Charmander</h1>
+            <h1>Squirtle</h1>
+        </div>
+        </>
+    )
 }

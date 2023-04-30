@@ -1,16 +1,17 @@
 .home{
-    background-color: aqua;
-    height: 100%
+
+    background-color: aliceblue
     /*Muy importante para mandar cosas a la derecha */;
-    margin-top: 120px;
     display: flex;
     margin-right: auto;
-    padding: 0;
+    padding: 10px;
 }
 
-p{
-    background-color: purple;
+.home p{
+    margin: 0;
+    font-size: 20px;
 }
+
   
 @font-face {
       font-family: Pokemon;
@@ -18,5 +19,28 @@ p{
 }
 
 .newDiv{
-    background-color: darkgoldenrod;
+    background: #1f1f1f;
+    margin: 0;
+}
+
+.pokemons{
+    margin-bottom: 42px;
+}
+
+.pokemons img{
+    width: 120px;
+    height: 120px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.pokemons img.first{
+    width: 120px;
+    height: 120px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    padding-left: 80px;
+    padding-top: px;
 }

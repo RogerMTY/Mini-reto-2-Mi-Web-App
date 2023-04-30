@@ -2,20 +2,23 @@ body {
     margin: 0;
 }
 
-p {
+.navBar p{
+    color: aliceblue;
     font-family: monospace;
     font-size: 20px;
+    padding-left: 230px;
 }
 
 .navBar{
-    background-color: red;
+    background: #1f1f1f;;
     color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 15px;
-    gap: 10px
+    gap: 10px;
+    border-bottom: 3px solid black;
 }
 
 .navBar a{
@@ -26,21 +29,24 @@ p {
 }
 
 .navBar ul{
+    color: aliceblue;
     font-family: monospace;
     font-size: 25px;
     padding-left: 180px;
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 40px;
 }
 
+
+
 .navBar li.active{
-    background-color: yellow;
+    background-color: #462121 
 }
 
 .navBar li:hover {
-    background-color: aqua;
+    background-color: gray;
 }
 
 @font-face {
@@ -50,8 +56,11 @@ p {
 
 .title-page{
     padding:7px;
-    font-size: 30px;
-    font-family: Pokemon;
+}
+
+.title-page img{
+    height: 100px;
+    width: 100px;
 }
 
 .title-page:hover{

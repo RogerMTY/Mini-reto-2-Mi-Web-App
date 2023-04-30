@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+
+.header img{
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.header p{
+    color: aliceblue;
+}

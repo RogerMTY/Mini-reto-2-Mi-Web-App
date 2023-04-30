@@ -1,5 +1,4 @@
 .component{
-  background-color: yellow;
-  height: 100%;
-  text-align: center;
+  background-image: "./images/background.jpg";
+  background-color: #4A403C
 }

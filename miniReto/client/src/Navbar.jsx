@@ -1,13 +1,15 @@
 import { Link, useMatch, useResolvedPath} from "react-router-dom"
+import "./Navbar.css";
 export default function Navbar(){
     return <nav className="navBar">
-        <Link to="/" className="title-page">Pokemon</Link>
+        <Link to="/" className="title-page"><img src={require('./images/pokeball.png')} alt="" /></Link>
         <ul>
             <ActiveComponent to="/Kanto">Kanto</ActiveComponent>
             <ActiveComponent to="/Johto">Johto</ActiveComponent>
             <ActiveComponent to="/Hoenn">Hoenn</ActiveComponent>
+            <ActiveComponent to="/CreatePKMN">PKMN Creator</ActiveComponent>
         </ul>
-        <p>Created by Rogelio and Yahir</p>
+        <p>TM</p>
     </nav>
 }
 
