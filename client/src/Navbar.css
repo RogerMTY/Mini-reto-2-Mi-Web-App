@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Pokemon;
+    src: url(./fonts/Pokemon\ Solid.ttf);
+
+    font-family: open-Sans;
+    src: url(./fonts/OpenSans.ttf);
+}
+
+.rights {
+    background-color: red;
+    font-family: open-Sans;
+    font-size: 20px;
+}
+
+.navBar{
+    background-color: red;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+}
+
+
+.navBar ul{
+    font-family: open-Sans;
+    font-weight: bold;
+    font-size: 25px;
+    list-style: none;
+    display: flex;
+    
+}
+
+.navBar a{
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+
+.navBar li{
+    margin: 0px 5px 0px 5px;
+}
+
+
+.navBar li:hover {
+    background-color: #efefed;
+    border: 1px solid #efefed;
+    border-radius: 10%;
+}
+
+.navBar img{
+    max-width: 100%;
+}
+
+.title-page{
+    width: 100px;
+}
