@@ -9,6 +9,87 @@ const fs = require("fs");
 
 app.use(bodyParser.json());
 
+// ----------------------------------------------------------------------------------------------------
+
+// Credenciales de MySql
+const mysql = require('mysql');
+const { error } = require("console");
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'miniReto',
+  password: 'hola123',
+  database: 'pokemon'
+})
+
+
+connection.connect((error, s)=>{
+  console.log(error);
+});
+
+function db_query(query){
+  try{
+      return new Promise((resolve, reject) => {
+        connection.query(query, function (err, result) {
+              if (err) throw err;
+              resolve(Object.values(result));
+          });
+        });
+  }catch(except){}
+}
+
+getKanto = async (req, res) => {
+  const response = await db_query("SELECT * FROM iniciales where region = 'Kanto';");
+  res.json(response);
+  res.end;
+}
+
+getJohto = async (req, res) => {
+  const response = await db_query("SELECT * FROM iniciales where region = 'Johto';");
+  res.json(response);
+  res.end;
+}
+
+getHoenn = async (req, res) => {
+  const response = await db_query("SELECT * FROM iniciales where region = 'Hoenn';");
+  res.json(response);
+  res.end;
+}
+
+getAll = async (req, res) => {
+  const response = await db_query("SELECT imagen FROM iniciales;");
+  res.json(response);
+  res.end;
+}
+
+getPokemon = async (req, res) => {
+  const response = await db_query("SELECT * FROM iniciales ORDER BY nombre DESC LIMIT 1");
+  res.json(response);
+  res.end;
+}
+
+
+
+app.get('/api/getpokemon', getPokemon);
+app.get("/api/kanto", getKanto);
+app.get("/api/johto", getJohto);
+app.get("/api/hoenn", getHoenn);
+app.get("/api/all", getAll);
+
+// ----------------------------------------------------------------------------------------------------
+
+app.post('/api/pokemon', (req, res) => {
+    const { name, region, pokedexnumber, type, weakness, imageurl } = req.body;
+    const sql = "INSERT INTO iniciales (nombre, region, numeroPokedex, tipo, debilidad, imagen) VALUES ('" + name + "', '" + region + "','" + pokedexnumber+ "','" + type + "','" + weakness + "','" + imageurl + "')";
+    connection.query(sql,(error, resultados, fields) =>{
+      if(error)throw error;
+      console.log(resultados);
+      //res.send(resultados)
+    })
+    const newPokemon = { name, region, pokedexnumber, type, weakness, imageurl }
+    res.json(newPokemon)
+});
+
+
 app.get("/api/message", (req, res) =>{
   res.json({message: "Hola!, soy el profesor Oak. Te doy la bienvenida al mundo Pokemon!"})
 });
@@ -19,23 +100,10 @@ app.get("/api/message2", (req, res) =>{
 
 app.get("/api/message3", (req, res) =>{
   res.json({message: "Te aseguramos que después de visitar todas nuestras secciones tendrás completamente en claro qué Pokemon eligirás para tu siguiente aventura!"})
-})
+});
 
 app.get("/api/message4", (req, res) =>{
   res.json({message: "Por ultimo, tambien contamos con una herramienta para crear tu propio Pokemon customizado, no olvides visitarla! Disfruta tu camino Pokemon!"})
-})
-
-app.post('/api/kantoPkmn', (req, res) => {
-  const formData = req.body;
-  fs.writeFile('./Kanto.json', JSON.stringify(formData), (err) => {
-    if (err) {
-      console.error(err);
-      res.sendStatus(500);
-    } else {
-      console.log('Json created');
-      res.json(formData);
-    }
-  });
 });
 
 app.listen(PORT, () => {

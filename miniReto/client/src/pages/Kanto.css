@@ -1,5 +1,35 @@
-.pkmnnames{
-    display: flex;
-    justify-content: center;
-    gap: 20rem;
+@font-face {
+    font-family: open-Sans;
+    src: url(../fonts/OpenSans.ttf);
 }
+
+.pokedex{
+    background-color: red;   
+}
+
+.pokemons{
+    background-color: #efefed;
+    margin: 0px 40px 40px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.useDataCont{
+    text-align: center;
+}    
+
+.pokemons p{
+    background-color: #efefed;
+    font-family: open-Sans;
+    font-size: 20px;
+}
+  
+img{
+    flex: 33.33%;
+    max-width: 100%;
+    height: auto;
+}
+  

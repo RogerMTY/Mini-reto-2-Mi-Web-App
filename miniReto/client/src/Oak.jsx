@@ -61,7 +61,7 @@ export default function Oak(){
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/393.png" alt=""/>
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/495.png" alt=""/>
         </div>
-        <div className="newDiv">
+        <div>
             <Footer/> 
         </div> 
         </>
