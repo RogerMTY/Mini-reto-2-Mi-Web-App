@@ -7,7 +7,7 @@
     background-color: red;   
 }
 
-.pokemons{
+.kantopokemon{
     background-color: #efefed;
     margin: 0px 40px 40px 40px;
     display: flex;
@@ -21,13 +21,13 @@
     text-align: center;
 }    
 
-.pokemons p{
+.kantopokemons p{
     background-color: #efefed;
     font-family: open-Sans;
     font-size: 20px;
 }
   
-img{
+.pokedex img{
     flex: 33.33%;
     max-width: 100%;
     height: auto;

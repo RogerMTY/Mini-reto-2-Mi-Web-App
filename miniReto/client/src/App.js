@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 
-
+import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Oak from "./Oak";
+import Oak from "./pages/Oak.jsx";
 import Johto from "./pages/Johto";
 import Hoenn from "./pages/Hoenn";
 import Kanto from "./pages/Kanto";
@@ -24,6 +24,7 @@ function App(){
                 <Route path="/Hoenn" element={<Hoenn/>}/>
             </Routes>
         </div>
+        <Footer/>
         </>
     )
 }

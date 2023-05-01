@@ -17,7 +17,7 @@ export default function Kanto(){
     return (
     <div className='pokedex'>
         <h1>Kanto</h1>
-        <div className='pokemons'>
+        <div className='kantopokemon'>
             {useDataKanto.map( data =>{
                 return(
                     <>

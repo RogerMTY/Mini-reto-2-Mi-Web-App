@@ -9,7 +9,7 @@ export default function Navbar(){
             <ActiveComponent to="/Hoenn">Hoenn</ActiveComponent>
             <ActiveComponent to="/CreatePKMN">PKMN Creator</ActiveComponent>
         </ul>
-        <p>TM</p>
+        <p>Designed under Fair Use</p>
     </nav>
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Oak.css"
-import Footer from "./Footer";
+
 export default function Oak(){
 
     const [data, setData] = React.useState(null);
@@ -35,7 +35,7 @@ export default function Oak(){
     return(
         <>
         <div className="home">
-            <img src={require('./images/Profesor_Oak.png')} alt=""/>
+            <img src={require('../images/Profesor_Oak.png')} alt=""/>
             <div>
                 <h1>Profesor Oak dice: </h1>
                 <p>{data}</p>
@@ -43,7 +43,7 @@ export default function Oak(){
                 <p>{data3}</p>
                 <p>{data4}</p>
             </div>
-                <img src={require('./images/logo.png')} alt="" style={{ width: 500, height: 200, padding: 50}} />
+                <img src={require('../images/logo.png')} alt="" style={{ width: 500, height: 200, padding: 50}} />
         </div>
         <div className="pokemons">
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="" className="first"/>
@@ -61,9 +61,6 @@ export default function Oak(){
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/393.png" alt=""/>
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/495.png" alt=""/>
         </div>
-        <div>
-            <Footer/> 
-        </div> 
         </>
     )
 }

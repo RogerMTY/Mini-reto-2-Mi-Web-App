@@ -3,18 +3,42 @@
 }
 
 .datadiv{
-    margin-top: 510px;
+    margin-top: 20px;
 }
 
-.center{
-    padding-top: 20px;
+.form{
+    padding-top: 30px;
     color: aliceblue;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
-.center2{
+.form button{
+    margin-top: 20px;
+}
+
+.newpokemon{
     padding-top: 20px;
     text-align: center;
     color: aliceblue;
 }
+
+.newpokemon button{
+    margin-top: 20px;
+}
+
+.updateform{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.updateform button{
+    margin-top: 20px;
+}
+
+.updateform p{
+    font-style: italic;
+}
+ 

@@ -67,8 +67,6 @@ getPokemon = async (req, res) => {
   res.end;
 }
 
-
-
 app.get('/api/getpokemon', getPokemon);
 app.get("/api/kanto", getKanto);
 app.get("/api/johto", getJohto);
@@ -78,16 +76,38 @@ app.get("/api/all", getAll);
 // ----------------------------------------------------------------------------------------------------
 
 app.post('/api/pokemon', (req, res) => {
-    const { name, region, pokedexnumber, type, weakness, imageurl } = req.body;
-    const sql = "INSERT INTO iniciales (nombre, region, numeroPokedex, tipo, debilidad, imagen) VALUES ('" + name + "', '" + region + "','" + pokedexnumber+ "','" + type + "','" + weakness + "','" + imageurl + "')";
-    connection.query(sql,(error, resultados, fields) =>{
-      if(error)throw error;
-      console.log(resultados);
-      //res.send(resultados)
-    })
+  const { name, region, pokedexnumber, type, weakness, imageurl } = req.body;
+  const sql = "INSERT INTO iniciales (nombre, region, numeroPokedex, tipo, debilidad, imagen) VALUES ('" + name + "', '" + region + "','" + pokedexnumber+ "','" + type + "','" + weakness + "','" + imageurl + "')";
+  connection.query(sql,(error, resultados, fields) =>{
+    if(error)throw error;
+    console.log('Created');
+  })
+  const newPokemon = { name, region, pokedexnumber, type, weakness, imageurl }
+  res.json(newPokemon)
+});
+
+app.delete('/api/deletepokemon', (req, res) =>{
+  const {name, region, pokedexnumber, type, weakness, imageurl} = req.body;
+  const sql = "DELETE FROM iniciales WHERE nombre = '" + name + "'"
+  connection.query(sql,(error, resultados, fields) =>{
+    if(error)throw error;
+    console.log('Deleted');
     const newPokemon = { name, region, pokedexnumber, type, weakness, imageurl }
     res.json(newPokemon)
-});
+  })
+})
+
+app.put('/api/updatepokemon', (req, res) =>{
+  const {newname, newregion, newpokedexnumber, newtype, neweakness, newimageUrl } = req.body;
+  const sql = "UPDATE iniciales SET nombre = '"+ newname +"', region = '"+ newregion +"', tipo =  '"+ newtype +"', debilidad = '"+ neweakness +"', imagen = '"+ newimageUrl +"'  WHERE numeroPokedex = '"+ newpokedexnumber +"'"
+  connection.query(sql,(error, resultados, fields) =>{
+    if(error)throw error;
+    console.log('Updated');
+    const newPokemon = { newname, newregion, newpokedexnumber, newtype, neweakness, newimageUrl }
+    res.json(newPokemon)
+    //res.send(resultados)
+  })
+})
 
 
 app.get("/api/message", (req, res) =>{
