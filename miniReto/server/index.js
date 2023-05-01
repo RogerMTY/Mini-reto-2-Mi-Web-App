@@ -61,13 +61,7 @@ getAll = async (req, res) => {
   res.end;
 }
 
-getPokemon = async (req, res) => {
-  const response = await db_query("SELECT * FROM iniciales ORDER BY nombre DESC LIMIT 1");
-  res.json(response);
-  res.end;
-}
 
-app.get('/api/getpokemon', getPokemon);
 app.get("/api/kanto", getKanto);
 app.get("/api/johto", getJohto);
 app.get("/api/hoenn", getHoenn);
